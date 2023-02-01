@@ -8,7 +8,7 @@ let impuestos = 1.3;
 let nombre = prompt("Como se llama el cliente?");
 let saldo = alert(`${nombre} tu saldo es de ${money}$`);
 alert(`¿Que articulo desea llevar estimado cliente ${nombre}?`);
-let articulo = prompt("1: lavadora, 2: licuadora , 3: olla , 4: lavaplatos , 10: ¿?" );
+let articulo = prompt("1: lavadora, 2: licuadora , 3: olla , 4: lavaplatos" );
 
 
 if (articulo == 1){
