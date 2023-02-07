@@ -1,3 +1,11 @@
+function unafuncion(a,b){
+  return a - b
+}
+
+function confirmarpago(){
+  return confirm("Seguro quieres comprar?");
+}
+
 let lavaplatos = 500;
 let olla = 250;
 let licuadora = 300;
@@ -13,11 +21,11 @@ let articulo = prompt("1: lavadora, 2: licuadora , 3: olla , 4: lavaplatos" );
 
 if (articulo == 1){
     alert(`la lavadora cuesta: 1500$`)
-    let confirmar = confirm("Seguro quieres comprar?");
+    let confirmar = confirmarpago()
     if(confirmar == true){
       let contraseña = prompt("ponga la contraseña para realizar la compra");
       if(contraseña == 1234){
-        let resultado = parseInt(money) - parseInt(lavaplatos);
+        let resultado = unafuncion(parseInt(money), parseInt(lavadora))
         alert(`Tienes en tu cuenta ${resultado}`)
         alert("Su compra esta Hecha: ) --Gracias por Comprar--")
       }else{
@@ -30,11 +38,11 @@ if (articulo == 1){
 
 else if(articulo == 2){
     alert(`la licuadora cuesta: 300$`)
-    let confirmar = confirm("Seguro quieres comprar?");
+    let confirmar = confirmarpago();
     if(confirmar == true){
       let contraseña = prompt("ponga la contraseña para realizar la compra");
       if(contraseña == 1234){
-        let resultado = parseInt(money) - parseInt(lavaplatos);
+        let resultado = unafuncion(parseInt(money), parseInt(licuadora));
         alert(`Tienes en tu cuenta ${resultado}`)
         alert("Su compra esta Hecha: ) --Gracias por Comprar--")
       }else{
@@ -46,11 +54,11 @@ else if(articulo == 2){
 }
 else if(articulo == 3){
     alert(`la olla cuesta: 250$`)
-    let confirmar = confirm("Seguro quieres comprar?");
+    let confirmar = confirmarpago();
     if(confirmar == true){
       let contraseña = prompt("ponga la contraseña para realizar la compra");
       if(contraseña == 1234){
-        let resultado = parseInt(money) - parseInt(lavaplatos);
+        let resultado = unafuncion(parseInt(money), parseInt(olla));
         alert(`Tienes en tu cuenta ${resultado}`)
         alert("Su compra esta Hecha: ) --Gracias por Comprar--")
       }else{
@@ -62,11 +70,11 @@ else if(articulo == 3){
 }
 else if(articulo == 4){
     alert(`la lavaplatos cuesta: 500$`)
-    let confirmar = confirm("Seguro quieres comprar?");
+    let confirmar = confirmarpago();
     if(confirmar == true){
       let contraseña = prompt("ponga la contraseña para realizar la compra");
       if(contraseña == 1234){
-        let resultado = parseInt(money) - parseInt(lavaplatos);
+        let resultado = unafuncion(parseInt(money), parseInt(lavaplatos))
         alert(`Tienes en tu cuenta ${resultado}`)
         alert("Su compra esta Hecha: ) --Gracias por Comprar--")
       }else{
